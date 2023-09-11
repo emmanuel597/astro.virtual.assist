@@ -1,0 +1,800 @@
+body{
+    background-color: rgba(31, 49, 251, 0.934);
+    background-color: rgba(255, 255, 255, 0.932);
+}
+#alarmcircle{display: none;}
+#reminders{display: none;}
+#calculators{display: none;}
+#notes{display: none;}
+#scheduels{display: none;}
+#texttospeech{display: none;}
+#musics{display: none; width: 390px; overflow-y: auto;}
+#settings{display: none;}
+#load{
+    display: none;
+}
+#audio{
+    display: none;
+}
+#sidepanel{
+    height: 100%;
+    width: 400px;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 3px 3px 20px rgb(94, 93, 93);
+position: absolute;
+top: 0;
+left: 0;
+margin-left: -10px;
+display: none;
+flex-direction: column;
+align-items: center;
+
+}
+#top{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: gray;
+}
+#tile{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ margin-left: 0px;
+   height: fit-content;
+   margin-top: 60px;
+   color: white;
+}
+#alarmvalue{
+  font-size: 23px;
+    color: white;
+    font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#circle2{
+        width: 150px;
+    height: 150px;
+border: 8px solid rgb(74, 74, 74);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#input{
+    position: absolute;
+    top: 440px;
+    width: 50px;
+    left: 170px;
+    background-color: transparent;
+}
+#add2{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 30px;
+    
+}
+#remindervalue1{
+    background-color: rgb(231, 231, 231);
+    width: 270px;
+    height: 50px;
+    display: flex;
+    padding-left: 30px;
+}
+#remindervalue{
+    background-color: rgb(231, 231, 231);
+    width: 270px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    padding-left: 30px;
+}
+details{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+#dtime{
+    height: 20px;
+    width: 50px;
+    margin-top: 13px;
+    margin-left: 50px;
+}
+#dtime2{
+    height: 20px;
+    width: 50px;
+    margin-top: 13px;
+    margin-left: 50px;
+}
+#dtime3{
+    height: 20px;
+    width: 50px;
+    margin-top: 13px;
+    margin-left: 50px;
+}
+
+#add3{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+#notevalue1{
+    background-color: rgb(231, 231, 231);
+    width: 270px;
+    height: 50px;
+    display: flex;
+    padding-left: 30px;
+    
+}
+#notevalue{
+    background-color: rgb(231, 231, 231);
+    width: 270px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    padding-left: 30px;
+    
+}
+#add4{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+#audio1{
+    margin-top: 40px;
+   margin-left: 45px;
+}
+#audio2{
+    margin-top: 40px;
+   margin-left: 45px;
+}
+#audio3{
+    margin-top: 40px;
+   margin-left: 45px;
+}
+#audio4{
+    margin-top: 40px;
+   margin-left: 45px;
+}
+#mainaudio{
+    margin-top: 10px;
+    margin-left: 45px;
+}
+#ainput1{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+#ainput2{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#ainput3{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#ainput4{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#ainput5{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#add5{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+
+#add6{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    
+}
+#completed{
+    width: 90px;
+    height: 25px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px; 
+    display: none;   
+}
+#save2{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 110px;
+    margin-left: 70px;
+}
+#read{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 70px;
+    
+}
+#key{
+    background-color: rgb(255, 76, 11);
+    width: 50px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 20px;
+text-align: center;
+padding-top: 15px;
+}
+button:hover{background-color: black;}
+#keye{
+    background-color: rgb(11, 88, 255);
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+text-align: center;
+padding-top: 15px;
+}
+#calcscreen{
+   text-align: end;
+    width: 300px;
+    height: 50px;
+    background-color: gray;
+    border: 0;
+}
+#row1{
+    display: flex;
+    
+    margin-top: 20px;
+}
+#row2{
+    display: flex;
+    
+}
+#row3{
+    display: flex;
+   
+}
+#scheduletime{
+    margin-left: 20px;
+}
+#username{
+    margin-left: 15px;
+}
+h1{
+color: white;
+font-size: 5rem;
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-top: 150px;
+animation-timing-function: linear;
+
+
+}
+
+h2{
+color: rgb(255, 255, 255);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+
+}
+
+#eye3{
+    border: 10px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-delay: 11s;
+    
+
+}
+#eye4{
+    border: 10px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 70px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-delay: 11s;
+    
+
+}
+#eyes2{
+
+    width: 330px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+scale: 0.2;
+display: flex;
+
+
+}
+#eye1{
+    border: 10px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-delay: 11s;
+
+}
+#eye2{
+    border: 10px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-delay: 11s;
+
+}
+#eyes{
+
+    width: 330px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+scale: 0.2;
+display: flex;
+
+
+}
+
+
+#profile{
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h3{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: none;
+}
+
+#chat{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 20px;
+    width: 80%;
+margin-right: 70px;
+    display: block;
+left: 100px;
+}
+#enter{
+position: absolute;
+right: 110px;
+ bottom: 20;
+ width: 35px;
+ height: 35px;
+    background-color: rgb(31, 49, 250);
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+#mic{
+    position: absolute;
+    right: 40px;
+     bottom: 20;
+     width: 35px;
+     height: 35px;
+        background-color: rgb(33, 51, 253);
+        color: white;
+        border: 0;
+        border-radius: 50%;
+        align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+#navbarleft{
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+#navbarbottom{
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+#sleepscreen{
+    width: 100%;
+    height: 540px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+animation-duration: 1s;
+animation-iteration-count: 1;
+display: none;
+}
+#astrotext{
+    font-size: 4rem;
+margin-top: 150px;
+text-align: center;
+    background: linear-gradient( white 60%, black 40%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#circle{
+    background-color: rgba(255, 109, 18, 0.616);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 160px;
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: none;
+   
+}
+#mic2{
+     width: 80px;
+     height: 80px;
+        background-color: rgb(255, 109, 18);
+        color: white;
+        border: 0;
+        border-radius: 50%;
+        align-items: center;
+    justify-content: center;
+    display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-top: 160px;
+scale: 1;
+    }
+#alarmpage{
+    width: 400px;
+    height: 250px;
+    background-color: gray;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    position: absolute;
+    top: 170px;
+    left: 420px;
+
+}
+#alarmtext{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 0;
+    margin-top: 0px;
+}
+#close{
+    width: 140px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#chatarea{
+    height: 450px;
+    width: 100%;
+     border: 1px solid rgba(57, 57, 57, 0.249);
+     margin-top: 70px;
+     overflow-y: scroll;
+}
+section{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(38, 56, 253, 0.954);
+    width: fit-content;
+    height: fit-content;
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-bottom: 50px;
+   margin-left: 30px;
+}
+h6{
+    font-size: 15px;
+    font-weight: light;
+    height: fit-content;
+}
+article{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(190, 190, 190);
+    width: fit-content;
+    height: fit-content;
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+   
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-bottom: 50px;
+   margin-left: 30px;
+}
+#loadpage{
+    background-color: rgb(31, 49, 251);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: transistion;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 9s;
+}
+#img{
+    opacity: 8%;
+
+   font-size: 6rem; 
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-shadow: -2px 2px 5px rgb(81, 80, 80);
+   position: absolute;
+left: 40%;
+top: 60px;
+}
+#calculator{
+    position: absolute;
+    right: 550px;
+}
+#setting{
+position: absolute;
+right: 60px;
+}
+#games{
+    position: absolute;
+    right: 130px;
+}
+#alarm{
+    position: absolute;
+    right: 270px;
+}
+#note{
+    position: absolute;
+    right: 200px;
+}
+#clean{
+    position: absolute;
+    right: 340px;
+}
+#song{
+    position: absolute;
+    right: 480px;
+}
+#textto{
+    position: absolute;
+    right: 410px;
+}
+#menu{
+right: 50px;
+    position: absolute;
+    width: 30px;
+    display: none;
+}
+
+h4{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -100px;
+}
+#loadbar{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    column-gap: 10px;
+    margin-left: 48%;
+align-items: center;
+height: 10px;
+width: 200px;
+margin-top: 30px;
+
+}
+#bar{
+    animation-name: loadbar;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 3;
+}
+#bar2{
+    animation-name: loadbar;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
+#bar3{
+    animation-name: loadbar;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 3;
+}
+#bar4{
+    animation-name: loadbar;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+
+
+@keyframes loadbar {
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 10%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        height: 100px;
+        
+    }
+    50%{
+        height: 0px;
+    }
+    100%{
+        height: 100px;
+    }
+}
+
+
+@keyframes transistion{
+    0%{
+       height: 100%;
+    }
+    100%{
+       height: 0%;
+    }
+}
+
+@keyframes transistion2{
+    0%{
+       height: 540px;
+    }
+    100%{
+       height: 0px;
+    }
+}
+@keyframes transistion3{
+    0%{
+       height: 0px;
+    }
+    100%{
+       height: 540px;
+    }
+}
+
+@keyframes scale{
+    0%{
+     scale: 1;
+    }
+    50%{
+        scale: 0.8;
+    }
+    100%{
+       scale: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  #chat{
+    width: 60%;
+
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+    #menu{display: block;}
+     #calculator{
+display: none;
+    }
+    #setting{
+        display: none;
+    }
+    #games{
+        display: none;
+    }
+    #alarm{
+        display: none;
+    }
+    #note{
+        display: none;
+    }
+    #clean{
+        display: none;
+    }
+    #song{
+        display: none;
+    }
+    #textto{
+        display: none;
+    }
+
+ }
