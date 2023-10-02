@@ -1,3 +1,4 @@
+
 body{
     background-color: rgba(31, 49, 251, 0.934);
     background-color: rgba(255, 255, 255, 0.932);
@@ -68,6 +69,7 @@ border: 8px solid rgb(74, 74, 74);
     width: 50px;
     left: 170px;
     background-color: transparent;
+    border: 0;
 }
 #add2{
     width: 100px;
@@ -76,7 +78,7 @@ border: 8px solid rgb(74, 74, 74);
     background-color: rgb(31, 49, 250);
     border: 0;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 30px;
     
 }
@@ -125,8 +127,8 @@ details{
     background-color: rgb(31, 49, 250);
     border: 0;
     border-radius: 20px;
-    margin-top: 40px;
-    margin-left: 90px;
+    margin-top: 55px;
+    margin-left: 100px;
     
 }
 #notevalue1{
@@ -153,8 +155,8 @@ details{
     background-color: rgb(31, 49, 250);
     border: 0;
     border-radius: 20px;
-    margin-top: 40px;
-    margin-left: 90px;
+    margin-top: 55px;
+    margin-left: 100px;
     
 }
 #audio1{
@@ -216,8 +218,8 @@ details{
     background-color: rgb(31, 49, 250);
     border: 0;
     border-radius: 20px;
-    margin-top: 40px;
-    margin-left: 90px;
+    margin-top: 50px;
+    margin-left: 70px;
     
 }
 #completed{
@@ -236,8 +238,8 @@ details{
     background-color: rgb(31, 49, 250);
     border: 0;
     border-radius: 20px;
-    margin-top: 110px;
-    margin-left: 70px;
+    margin-top: 120px;
+    margin-left: 65px;
 }
 #read{
     width: 100px;
@@ -254,7 +256,18 @@ details{
     background-color: rgb(255, 76, 11);
     width: 50px;
     height: 35px;
-    margin-left: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 20px;
+text-align: center;
+padding-top: 15px;
+}
+.key{
+    background-color: rgb(255, 76, 11);
+    width: 50px;
+    height: 35px;
+    margin-left: 10px;
     border-radius: 10px;
     font-weight: 100;
     font-size: 20px;
@@ -264,7 +277,7 @@ padding-top: 15px;
 button:hover{background-color: black;}
 #keye{
     background-color: rgb(11, 88, 255);
-    width: 120px;
+    width: 100px;
     height: 35px;
     margin-left: 20px;
     border-radius: 10px;
@@ -279,6 +292,7 @@ padding-top: 15px;
     height: 50px;
     background-color: gray;
     border: 0;
+    margin-top: -20px;
 }
 #row1{
     display: flex;
@@ -287,17 +301,46 @@ padding-top: 15px;
 }
 #row2{
     display: flex;
-    
+    margin-top: -20px;
+}
+#row4{
+    display: flex;
+    margin-top: -20px;
 }
 #row3{
     display: flex;
-   
+   margin-top: -20px;
 }
 #scheduletime{
     margin-left: 20px;
 }
 #username{
     margin-left: 15px;
+}
+#timervalue{font-size: 30px; color: white; display: none;}
+#timer{
+    background-color: gray;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(52, 52, 52, 0.856);
+}
+#timervalue2{height: 30px; width: 100px; background-color: transparent; border: 0; margin-bottom: 20px; margin-top: 20px; display: block;}
+#start2{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 49, 250);
+    border: 0;
+    border-radius: 20px;
+   
 }
 h1{
 color: white;
@@ -384,7 +427,12 @@ display: flex;
 
 }
 
-
+#version{
+    color: white;
+     position: absolute;
+      right: 20px; bottom: 10px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;}
 #profile{
     border: 2px solid white;
     height: 150px;
@@ -484,14 +532,21 @@ text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+#icons{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+}
 #circle{
     background-color: rgba(255, 109, 18, 0.616);
     width: 140px;
     height: 140px;
     border-radius: 50%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 160px;
+    position: absolute;
+margin-left: 570px;
+top: 352px;
     animation-name: scale;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -612,36 +667,37 @@ left: 40%;
 top: 60px;
 }
 #calculator{
-    position: absolute;
-    right: 550px;
+    margin-left: 50px;
 }
 #setting{
-position: absolute;
-right: 60px;
+    margin-left: 50px;
 }
 #games{
-    position: absolute;
-    right: 130px;
+    margin-left: 50px;
 }
 #alarm{
-    position: absolute;
-    right: 270px;
+    margin-left: 50px;
 }
 #note{
-    position: absolute;
-    right: 200px;
+    margin-left: 50px;
 }
 #clean{
-    position: absolute;
-    right: 340px;
+    margin-left: 50px;
 }
 #song{
-    position: absolute;
-    right: 480px;
+    margin-left: 50px;
 }
 #textto{
-    position: absolute;
-    right: 410px;
+margin-left: 50px;
+}
+#cancel{
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 0;
+    margin-top: -30px;
+    display: none;
 }
 #menu{
 right: 50px;
@@ -772,29 +828,54 @@ margin-top: 30px;
 
 @media screen and (max-width: 900px) {
     #menu{display: block;}
-     #calculator{
-display: none;
-    }
-    #setting{
-        display: none;
-    }
-    #games{
-        display: none;
-    }
-    #alarm{
-        display: none;
-    }
-    #note{
-        display: none;
-    }
-    #clean{
-        display: none;
-    }
-    #song{
-        display: none;
-    }
-    #textto{
-        display: none;
-    }
+#icons{
+    display: none;
+}
+#cancel{
+    display: block;
+}
 
  }
+
+ @media screen and (max-width: 400px) {
+#chatarea{
+    height: 600px;
+}
+#enter{
+    right: 60px;
+}
+#mic{
+    right: 10px;
+}
+#icons{
+   flex-direction: column;
+   row-gap: 50px;
+   top: 20px;
+right: 10px;
+}
+#eyes{
+    margin-left: -70px;
+}
+#img{
+    top: 22%;
+    left: 20%;
+}
+#circle{
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: 0;
+}
+#sleepscreen{
+    height: 92%;
+}
+@keyframes transistion3{
+    0%{
+       height: 0px;
+    }
+    100%{
+       height: 92%;
+    }
+}
+  }
+  
