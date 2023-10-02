@@ -839,7 +839,7 @@ margin-top: 30px;
 
  @media screen and (max-width: 400px) {
 #chatarea{
-    height: 400px;
+    height: 500px;
 }
 #enter{
     right: 60px;
