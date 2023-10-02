@@ -849,7 +849,7 @@ margin-top: 30px;
 }
 #icons{
    flex-direction: column;
-   row-gap: 50px;
+   row-gap: 30px;
    top: 20px;
 right: 10px;
 }
