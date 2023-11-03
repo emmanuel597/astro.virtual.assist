@@ -74,8 +74,8 @@ let value1 = "";
   else if(chat.innerHTML.includes("i ")){reference="user"; console.log(reference)}
   else if(chat.innerHTML.includes("your")){reference="me"; console.log(reference)}
   else if(chat.innerHTML.includes("astro")){reference="me"; console.log(reference)}
- else if(chat.innerHTML.includes("he")){reference="he"; console.log(reference)}
- else if(chat.innerHTML.includes("her")){reference="she"; console.log(reference)}
+ //else if(chat.innerHTML.includes("he")){reference="he"; console.log(reference)}
+ //else if(chat.innerHTML.includes("her")){reference="she"; console.log(reference)}
  else if(chat.innerHTML.includes("she")){reference="she"; console.log(reference)}
  else if(chat.innerHTML.includes("him")){reference="he"; console.log(reference)};
 
@@ -92,6 +92,7 @@ let value1 = "";
  else if(chat.innerHTML.includes("useless")){feeling="bad"; console.log(feeling)}
  else if(chat.innerHTML.includes("annoying")){feeling="bad"; console.log(feeling)}
  else if(chat.innerHTML.includes("hate")){feeling="bad"; console.log(feeling)}
+ else if(chat.innerHTML.includes("nice")){feeling="good"; console.log(feeling)}
  else if(chat.innerHTML.includes("love")){feeling="good"; console.log(feeling)}
  else if(chat.innerHTML.includes("okay")){feeling="good"; console.log(feeling)} 
  else if(chat.innerHTML.includes("good")){feeling="good"; console.log(feeling)}
@@ -120,11 +121,13 @@ let value1 = "";
  let verb = "";
  if(chat.innerHTML.includes("weather")){verb="weather"; console.log(verb)}
  else if(chat.innerHTML.includes("miss")){verb="miss"; console.log(verb)}
+ else if(chat.innerHTML.includes("meet")){verb="meet"; console.log(verb)}
  else if(chat.innerHTML.includes("missed")){verb="missed"; console.log(verb)}
  else if(chat.innerHTML.includes("long")){verb="since"; console.log(verb)}
  else if(chat.innerHTML.includes("while")){verb="since"; console.log(verb)}
  else if(chat.innerHTML.includes("spoke")){verb="speak"; console.log(verb)}
  else if(chat.innerHTML.includes("thank")){verb="thank"; console.log(verb)}
+ else if(chat.innerHTML.includes("name")){verb="name"; console.log(verb)}
  else if(chat.innerHTML.includes("welcome")){verb="welcome"; console.log(verb)}
   else if(chat.innerHTML.includes("pleasure")){verb="pleasure"; console.log(verb)}
   else if(chat.innerHTML.includes("sorry")){verb="sorry"; console.log(verb)};
@@ -148,36 +151,9 @@ else if(num==9){question2="do you love dogs"}
 else if(num==0){question2="would you like to play a game"};
 console.log(question);
 
-if(statement=="describeme"){reply.innerHTML= "good, thanks for asking"}
- else if(statement=="describeme"+day){reply.innerHTML= "good would you like to tell me about yours"}
- else if(statement=="describeme"+verb){reply.innerHTML= "good"}
- else if(statement=="yesornomegood"){reply.innerHTML= "yes"}
- else if(statement=="yesornomebad"){reply.innerHTML= "no"}
- else if(statement=="mestatementmebad"){reply.innerHTML= "i sad that you think so 😥"}
- else if(statement=="mestatementmegood"){reply.innerHTML= "thanks 😊"}
- else if(statement=="mebad"){reply.innerHTML= "i am sorry that you think so 😥"}
- else if(statement=="megood"){reply.innerHTML= "thanks 😊"}
- else if(statement=="hi"){reply.innerHTML= "hi"}
- else if(statement=="usersorry"){reply.innerHTML= "its okay"}
- else if(statement=="nightgood"){reply.innerHTML= "good night"+" "+username.value}
- else if(statement=="morninggood"){reply.innerHTML= "good morning"+" "+username.value}
- else if(statement=="eveninggood"){reply.innerHTML= "good evening"+" "+username.value}
- else if(statement=="afternoongood"){reply.innerHTML= "good afternoon"+" "+username.value}
- else if(statement=="userbadtoday"){reply.innerHTML= "i am sorry to hear that"+" "+username.value}
- else if(statement=="usergoodtoday"){reply.innerHTML= "that nice to hear"+" "+username.value}
- else if(statement=="userbad"){reply.innerHTML= "i am sorry to hear that"+" "+username.value}
- else if(statement=="usergood"){reply.innerHTML= "that nice to hear"+" "+username.value}
- else if(statement=="bye"){reply.innerHTML= "bye"}
- else if(statement=="mewelcome"){reply.innerHTML= "😊"}
- else if(statement=="userpleasure"){reply.innerHTML= "😊"}
- else if(statement=="userpleasure"){reply.innerHTML= "😊"}
- else if(statement=="methank"){reply.innerHTML= "my pleasure"}
- else if(statement=="thank"){reply.innerHTML= "😊"}
- else if(statement=="undefinedsince"){reply.innerHTML= "yes it has"}
- else if(statement=="memissed"){reply.innerHTML= "me too"}
- else if(statement=="memiss"){reply.innerHTML= "me too"}
- else if(statement=="hi"+value1+reference+day){reply.innerHTML= "hi"}
- else if(chat.innerText=="hi"){reply.innerHTML="hello"+" "+username.value+" "+question}
+
+
+if(chat.innerText=="hi"){reply.innerHTML="hello"+" "+username.value+" "+question}
 else if(chat.innerText=="hi astro"){reply.innerHTML="hello"+" "+username.value}
 else if(chat.innerText=="astro hi"){reply.innerHTML="hello"+" "+username.value}
 else if(chat.innerText=="hey"){reply.innerHTML="hello"}
@@ -343,6 +319,42 @@ else if(chat.innerText=="show timer"){reply.innerHTML="okay"; document.getElemen
 else if(chat.innerText=="hide timer"){reply.innerHTML="okay"; document.getElementById("timer").style.display="none"}
 else if(chat2.includes("calculate")){reply.innerHTML="okay"; calculator()}
 
+else if(statement=="describeme"){reply.innerHTML= "good, thanks for asking"}
+ else if(statement=="describeme"+day){reply.innerHTML= "good would you like to tell me about yours"}
+ else if(statement=="describeme"+verb){reply.innerHTML= "good"}
+ else if(statement=="yesornomegood"){reply.innerHTML= "yes"}
+ else if(statement=="yesornomebad"){reply.innerHTML= "no"}
+ else if(statement=="mestatementmebad"){reply.innerHTML= "i sad that you think so 😥"}
+ else if(statement=="megoodmeet"){reply.innerHTML= "it's nice to meet you to"}
+ else if(statement=="explainmename"){reply.innerHTML= "my name is astro"}
+ else if(statement=="nameme"){reply.innerHTML= "i am a virt assistant"}
+ else if(statement=="username"){ let nameg = chat2.indexOf("is"); reply.innerHTML= "hi its nice to meet you"+chat2.slice(nameg+2, 20)}
+ else if(statement=="explain"){reply.innerHTML= "i am not sure of "+chat2+" but i could help you research on that"}
+ else if(statement=="name"){reply.innerHTML= "i am not sure of "+chat2+" but i could help you research on that"}
+ else if(statement=="mestatementmegood"){reply.innerHTML= "thanks 😊"}
+ else if(statement=="mebad"){reply.innerHTML= "i am sorry that you think so 😥"}
+ else if(statement=="megood"){reply.innerHTML= "thanks 😊"}
+ else if(statement=="hi"){reply.innerHTML= "hi"}
+ else if(statement=="usersorry"){reply.innerHTML= "its okay"}
+ else if(statement=="nightgood"){reply.innerHTML= "good night"+" "+username.value}
+ else if(statement=="morninggood"){reply.innerHTML= "good morning"+" "+username.value}
+ else if(statement=="eveninggood"){reply.innerHTML= "good evening"+" "+username.value}
+ else if(statement=="afternoongood"){reply.innerHTML= "good afternoon"+" "+username.value}
+ else if(statement=="userbadtoday"){reply.innerHTML= "i am sorry to hear that"+" "+username.value}
+ else if(statement=="usergoodtoday"){reply.innerHTML= "that nice to hear"+" "+username.value}
+ else if(statement=="userbad"){reply.innerHTML= "i am sorry to hear that"+" "+username.value}
+ else if(statement=="usergood"){reply.innerHTML= "that nice to hear"+" "+username.value}
+ else if(statement=="bye"){reply.innerHTML= "bye"}
+ else if(statement=="mewelcome"){reply.innerHTML= "😊"}
+ else if(statement=="userpleasure"){reply.innerHTML= "😊"}
+ else if(statement=="userpleasure"){reply.innerHTML= "😊"}
+ else if(statement=="methank"){reply.innerHTML= "my pleasure"}
+ else if(statement=="thank"){reply.innerHTML= "😊"}
+ else if(statement=="undefinedsince"){reply.innerHTML= "yes it has"}
+ else if(statement=="memissed"){reply.innerHTML= "me too"}
+ else if(statement=="memiss"){reply.innerHTML= "me too"}
+ else if(statement=="hi"+value1+reference+day){reply.innerHTML= "hi"}
+
 else if(chat.innerText=="activate voice mode" || chat.innerText=="voice mode on" || chat.innerText=="turn on voice mode"){reply.innerHTML="voice mode activated"; micon=true; document.getElementById("sleepscreen").style.display="block"; document.getElementById("sleepscreen").style.animationName="transistion3";
 setInterval(speak2, 6000); circle.style.display="block"}
 else if(chat.innerText=="voice mode off" || chat.innerText=="close" || chat.innerText=="turn off voice mode" || chat.innerText=="deactivate voice mode" ){reply.innerHTML="voice mode deactivated"; micon=false; setTimeout(function sleeps (){document.getElementById("sleepscreen").style.display="none"}, 1000);
@@ -365,7 +377,6 @@ else if(chat2.includes("thank")){reply.innerHTML="my pleasure"}
 else if(chat2.includes("play a game")){reply.innerHTML="okay i have three inbuilt games which are memory number , tictactoe , rock,paper,scissors. just type the name of the game you want to play to begin"}
 else if(chat2.includes("yes")){reply.innerHTML="ok"}
 else if(chat2.includes("no")){reply.innerHTML="okay"}
-else if(chat2.includes("what your name")){reply.innerHTML="my name is astro"}
 else if(chat2.includes("boring")){reply.innerHTML="😥"}
 else if(chat2.includes("missed you")){reply.innerHTML="same here"}
 else if(chat2.includes("shutup") || chat.innerText=="keep quiet" || chat.innerText=="stop talking"){reply.innerHTML="sorry to here that am i annoying you"}
@@ -375,7 +386,7 @@ else if(chat2.includes("can i call you")){reply.innerHTML="i dont think my codes
 
 
 else{reply.innerHTML="am sorry i do not have a response for that"};
-
+chattext.value="";
 let msg = new SpeechSynthesisUtterance();
 let voices = window.speechSynthesis.getVoices();
 msg.voice = voices[6]; 
